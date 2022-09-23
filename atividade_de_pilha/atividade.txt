@@ -1,0 +1,7 @@
+1)A saida exibida foi:
+
+2
+1
+NULL
+A primeira foi 2 poque, o topo da pilha era o 2, em seguida com a sua remoção o topo passou
+ a se um, e para finalizar, com a remoção do último a pilha fica vazia e o ponteiro topo aponta para null, logo o printf dará erro.
