@@ -27,10 +27,5 @@ int main(){
     //Os itens acrecentados foram 14, depois 22, depois 36 e para finalizar 43.
     //Os processos foram concluidos na ordem 2, 4, 1, 3
     
-    //17 > 25 > 39 > 46
-    //25 > 39 > 46 > 14
-    //39 > 46 > 14 > 22
-    //46 > 14 > 22 > 36
-    //14 > 22 > 36 > 43
-    //22 > 36 > 43 > 11
+    //17, 25, 39, 46, 25, 39, 46, 14, 39, 46, 14, 22, 46, 14, 22, 36, 14, 22, 36, 43, 22, 36, 43, 11
    
