@@ -1,8 +1,6 @@
 #include <iostream>
 //#include "fila.hpp"
 #include "pillha.hpp"
-#include <ctype.h>
-
 #include <iostream>
 #include <cctype>
 
@@ -10,13 +8,13 @@
  
 using namespace std;
 
-typedef int itemF;
+typedef int item;
 
 class No {
  
 	public:
  
-		itemF valor;
+		item valor;
 		No* prox;
  
 		No(itemF n){
@@ -46,9 +44,9 @@ class Fila {
 			}
 		}
  
-		itemF retirar_da_fila() {
+		item retirar_da_fila() {
 			if(!vazia()) {
-                itemF valor = inicio->valor;
+                item valor = inicio->valor;
                 No* auxiliar = inicio;
                 inicio = inicio->prox;
                 free(auxiliar);
