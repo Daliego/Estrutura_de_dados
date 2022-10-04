@@ -24,5 +24,5 @@ int main(){
     }
     
     //A ordem de conclusão dos processos foi 17, depois 25, em segida, 39, e depois 46;
-
-}
+    
+    //Os itens acrecentados foram 14, depois 22, depois 36 e para finalizar 43.
