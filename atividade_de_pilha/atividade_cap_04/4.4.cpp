@@ -23,6 +23,14 @@ int main(){
         }
     }
     
-    //A ordem de conclusão dos processos foi 17, depois 25, em segida, 39, e depois 46;
-    
+    //No início dos processos eram 17, depois 25, em segida, 39, e depois 46;
     //Os itens acrecentados foram 14, depois 22, depois 36 e para finalizar 43.
+    //Os processos foram concluidos na ordem 2, 4, 1, 3
+    
+    //17 > 25 > 39 > 46
+    //25 > 39 > 46 > 14
+    //39 > 46 > 14 > 22
+    //46 > 14 > 22 > 36
+    //14 > 22 > 36 > 43
+    //22 > 36 > 43 > 11
+   
