@@ -67,12 +67,6 @@ void remover01(int mat){
 	i = i - 1;
 }
 
-void verMatriculas() {
-	for( int j = 0; j < i; j++) {
-		cout << lista[j].mat << endl;
-	}
-}
-
 main(){
 	Aluno aluno_01;
 	aluno_01.mat = 1;
@@ -90,14 +84,8 @@ main(){
 	incluirDesordenado(aluno_02);
 	incluirDesordenado(aluno_03);
 
-	verMatriculas();
-	cout << "=============" << endl;
 	remover00(3);
-	verMatriculas();
-	cout << "=============" << endl;
 	remover01(2);
-	verMatriculas();
-	cout << "=============" << endl;
 	mostrar(0);
 }
 
