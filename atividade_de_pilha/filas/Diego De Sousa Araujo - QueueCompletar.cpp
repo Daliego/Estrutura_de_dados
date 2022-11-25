@@ -27,16 +27,17 @@ class Queue: public queue<T> {
     }
     
     void simulaPilha(T novo){
-		queue<T> auxiliar;
-		while (fila.empty() != 1) {
-			auxiliar.push(fila.front());
+		queue<T> filaAuxiliar;
+		filaAuxiliar.push(novo);
+		while (fila.empty() != 1) {	
+			filaAuxiliar.push(fila.front());
 			fila.pop();
 		}
-		auxiliar.push(novo);
-		while (auxiliar.empty() != 1) {
-			fila.push(auxiliar.front());
-			auxiliar.pop();
+		while (filaAuxiliar.empty() != 1) {
+			fila.push(filaAuxiliar.front());
+			filaAuxiliar.pop();
 		}
+		
 	}
 };
 
@@ -46,8 +47,8 @@ int main(){
 	fila.simulaPilha(5);
 	fila.simulaPilha(6);
 
-	int item = fila.popQueue();
-	cout << item << endl;
+	//int item = fila.popQueue();
+	//cout << item << endl;
 	fila.popTodos();
 	return 1;
 }
