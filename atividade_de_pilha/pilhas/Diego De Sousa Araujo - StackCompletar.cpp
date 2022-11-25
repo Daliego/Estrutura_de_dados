@@ -9,9 +9,11 @@ class Stack: public stack<T> {
 		stack<T> pilha;
 	public:
 	T popStack(){
-		T topo = pilha.top();
-		pilha.pop();
-		return topo;
+		if (pilha.empty() != 1) {
+			T topo = pilha.top();
+			pilha.pop();
+			return topo;
+		}
 	}
 	
 	
@@ -24,15 +26,14 @@ class Stack: public stack<T> {
 	
 	void simulaFila(T novo){
 		stack<T> pilhaAuxiliar;
-		T auxiliar;
 		while (pilha.empty() != 1) {
-			auxiliar = popStack();
-			pilhaAuxiliar.push(auxiliar);
+			pilhaAuxiliar.push(pilha.top());
+			pilha.pop();
 		}
 		pilhaAuxiliar.push(novo);
 		while (pilhaAuxiliar.empty() != 1) {
-			auxiliar = popStack();
-			pilhaAuxiliar.push(auxiliar);
+			pilha.push(pilhaAuxiliar.top());
+			pilhaAuxiliar.pop();
 		}
 	}
 
